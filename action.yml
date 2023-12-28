@@ -1,5 +1,5 @@
-name: NR Broker intention open action
-description: Opens an intention
+name: NR Broker Vault login action
+description: This action logins the service to Vault, so that automation can access the service's secrets.
 branding:
   icon: package
   color: blue
