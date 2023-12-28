@@ -17,7 +17,11 @@ inputs:
   vault_url:
     default: https://knox.io.nrs.gov.bc.ca
     description: The vault url.
-
+  wrap_token:
+    default: false
+    description: >
+      If the token should be returned wrapped. This must be set to true if the
+      action will send the token to an external system.
 runs:
   using: "composite"
   steps:
@@ -30,4 +34,5 @@ runs:
         BROKER_URL: ${{ inputs.broker_url }}
         PROVISION_ROLE_ID: ${{ inputs.role_id }}
         VAULT_URL: ${{ inputs.vault_url }}
+        WRAP_TOKEN: ${{ inputs.wrap_token }}
       run: vault-login.sh
