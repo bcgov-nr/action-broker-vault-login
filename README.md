@@ -41,7 +41,7 @@ Please refer to the [NR Broker Repository](https://github.com/bcgov-nr/nr-broker
 
 # Output
 
-This action outputs the intention and action tokens as environment variables.
+This action outputs the vault token as an environment variable.
 
 ### VAULT_TOKEN
 
