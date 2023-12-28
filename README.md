@@ -15,7 +15,7 @@ It is recommended that:
 
 The output Vault token cannot be renewed. A continuously running service (server, serverless function, etc.) should provision an AppRole secret instead. See: https://github.com/bcgov-nr/action-broker-vault-provision
 
-# Broker Documention
+# Broker Documentation
 
 Please refer to the [NR Broker Repository](https://github.com/bcgov-nr/nr-broker) for full usage details.
 
