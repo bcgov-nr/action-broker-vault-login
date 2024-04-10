@@ -1,4 +1,4 @@
-# Broker Vault Login V1
+# Broker Vault Login V2
 
 This action logins the service to Vault, so that automation can **temporarily** access the service's secrets.
 
@@ -23,7 +23,7 @@ Please refer to the [NR Broker Repository](https://github.com/bcgov-nr/nr-broker
 
 <!-- start usage -->
 ```yaml
-- uses: bcgov-nr/action-broker-vault-login@v1
+- uses: bcgov-nr/action-broker-vault-login@v2
   with:
     # The token of the action containing the service to use to login as
     action_token: ''
