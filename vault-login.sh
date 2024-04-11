@@ -3,12 +3,12 @@
 echo "===> Vault login"
 # Get wrapped id
 if [[ -z "${PROVISION_ROLE_ID}" ]]; then
-  WRAPPED_VAULT_TOKEN_JSON=$(curl -s -X POST $BROKER_URL/v1/provision/approle/secret-id \
+  WRAPPED_VAULT_TOKEN_JSON=$(curl -s -X POST $BROKER_URL/v1/provision/token/self \
     -H 'X-Broker-Token: '"$ACTION_TOKEN"'' \
     -H 'X-Vault-Role-Id: '"$PROVISION_ROLE_ID"'' \
   )
 else
-  WRAPPED_VAULT_TOKEN_JSON=$(curl -s -X POST $BROKER_URL/v1/provision/approle/secret-id \
+  WRAPPED_VAULT_TOKEN_JSON=$(curl -s -X POST $BROKER_URL/v1/provision/token/self \
     -H 'X-Broker-Token: '"$ACTION_TOKEN"'' \
   )
 fi
